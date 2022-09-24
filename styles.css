@@ -5,7 +5,6 @@
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
-  
   body{
     background-color:hsl(218, 28%, 13%);
     font-size: 14px;
@@ -16,6 +15,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
   }
   .navbar{
     width:100%;
@@ -23,7 +23,6 @@
     justify-content: space-between;
   }
   #navbar-ul{
-    float:right;
     display:flex;
     gap:50px;
     list-style: none;
@@ -174,11 +173,12 @@
   border:0;
   margin-left: 40px;
   padding: 0;
+  padding-left: 20px;
 }
 #input-button{
   width:25%;
   border-radius: 20px;
-  background:linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%)); ;
+  background:linear-gradient(90deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
   color:white;
   font-weight: 700;
   font-family: Raleway,sans-serif;
@@ -191,9 +191,6 @@
 }
 #input-button:hover{
   background:  hsl(176, 68%, 64%);
-}
-input::placeholder{
-  padding-left: 20px;
 }
 .error{
   display: block;
@@ -307,15 +304,15 @@ justify-content: space-between;
 }
 #input-button {
   width:85%;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 0;
 }
 #email-input{
+  box-sizing: border-box;
   width: 85%;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 20;
 }
-
 
 }
 @media only screen and (max-width:900px){
