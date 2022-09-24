@@ -1,14 +1,11 @@
+let error = document.getElementById("email-error");
+let button = document.getElementById("input-button");
+let value = document.getElementById("email-input").value;
+let regex =/^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+button.addEventListener("click",()=>{
+     if(regex.test(value)){
+      error.classList.remove("hidden"); 
+    }
+});
 
-let form = document.getElementById("input-button");
-let email = document.getElementById("email-input").value;
-let error = document.getElementById("error");
-let regex =/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
-function validation(){
-    error.classList.remove('hidden');
-};
 
-form.addEventListener("click",()=>{
- preventDefault();
- validation();
- console.log("hello");
-})

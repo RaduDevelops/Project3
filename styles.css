@@ -199,15 +199,14 @@ input::placeholder{
   display: block;
   padding: 1px;
   text-align: left;
-  margin-bottom:0px;
   margin-left: 50px;
-  margin-top: 5px;
+  margin-top: -15px;
   color:red;
   font-weight: 700;
   font-size: 12px;
 }
 .hidden{
-  display: none;
+  display:none;
 }
 footer{
   background-color: hsl(216, 53%, 9%);
